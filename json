@@ -1,0 +1,12 @@
+{
+    "Version": "2012-10-17",
+    "Id": "__default_policy_ID",
+    "Statement": [
+      {
+        "Sid": "AllowAccess",
+        "Effect": "Allow",
+        "Action": "SQS:*",
+        "Resource": "arn:aws:sqs:us-east-2:778168509800:python"
+      }
+    ]
+  }

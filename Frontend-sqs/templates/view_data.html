@@ -1,0 +1,47 @@
+<style>
+    .table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+  
+    .table thead th {
+      background-color: #f2f2f2;
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+  
+    .table tbody td {
+      border: 1px solid #ddd;
+      padding: 8px;
+    }
+  
+    .table tbody tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+  
+    .table tbody tr:nth-child(odd) {
+      background-color: #ffffff;
+    }
+  </style>
+  
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Additional Data</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for item in data %}
+      <tr>
+        <td>{{ item['name'] }}</td>
+        <td>{{ item['email'] }}</td>
+        <td>{{ item['additional_data'] }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  
+  
